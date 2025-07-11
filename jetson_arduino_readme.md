@@ -1,12 +1,12 @@
-# 🌡️ Jetson Nano + Arduino 온습도 창반
+## Jetson Nano + Arduino 온습도 감지 기기
 
-## 📌 개요
+##  개요
 
 Jetson Nano와 Arduino를 연결하여 DHT11 온습도 센서의 값을 실시간으로 읽고, 사용자의 질문에 Gradio 창반 UI로 응답하는 프로젝트입니다.
 
 ---
 
-## 📁 프로젝트 구조
+##  프로젝트 구조
 
 - `Jetson Nano`에서 `Arduino`와 연결
 - `DHT11` 센서를 통해 온도와 습도 수집
@@ -15,7 +15,7 @@ Jetson Nano와 Arduino를 연결하여 DHT11 온습도 센서의 값을 실시�
 
 ---
 
-## 🧰 사전 준비
+##  사전 준비
 
 ### 소프트웨어
 
@@ -33,7 +33,7 @@ Jetson Nano와 Arduino를 연결하여 DHT11 온습도 센서의 값을 실시�
 
 ---
 
-## 🛠️ 설치 가이드
+##  설치 가이드
 
 ### 1. Arduino 설치 (Jetson Nano 기준)
 
@@ -67,7 +67,7 @@ python -m ipykernel install --user --name=myenv --display-name="Python (myenv)"
 
 ---
 
-## 🤖 아들이노 코드 예제
+##  아들이노 코드 예제
 
 ```cpp
 #include <SimpleDHT.h>
@@ -94,7 +94,7 @@ void loop() {
 
 ---
 
-## 🤖 창반 실행 코드 (Python)
+##  감지 실행 코드 (Python)
 
 `DHT11Assistant` 클래스를 기반으로 온습도 창반을 실행합니다.
 
@@ -106,7 +106,7 @@ python chatbot_dht11.py
 
 ---
 
-## 💡 Function Calling 예제
+##  Function Calling 예제
 
 ```json
 {
@@ -127,7 +127,7 @@ python chatbot_dht11.py
 
 ---
 
-## ☁️ 날씨 API 창반 예제
+##  날씨 API 창반 예제
 
 - API: [OpenWeatherMap](https://openweathermap.org/)
 - API Key 필요
@@ -135,7 +135,7 @@ python chatbot_dht11.py
 
 ---
 
-## 🔗 관련 링크
+##  관련 링크
 
 - [Jetson & Arduino 연결 프로젝트 GitHub](https://github.com/ralralra/jetson_DLI)
 - [Function Calling 설명](https://platform.openai.com/docs/guides/function-calling)
@@ -143,7 +143,7 @@ python chatbot_dht11.py
 
 ---
 
-## ⚠️ 주의 사항
+##  주의 사항
 
 - `Jetson.GPIO` 패키지가 가상환경에서 동작하지 않을 경우 `/usr/lib/...` 디렉토리의 패키지를 수동으로 복사해야 합니다.
 - `/dev/ttyACM0` 호시가 필요한 경우 권한 설정:
