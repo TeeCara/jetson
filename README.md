@@ -505,8 +505,8 @@ AttributeError: module 'cv2' has no attribute 'version'
 
 ✅ 해결
 
-python3 -c "import cv2; print(cv2.__version__)"
-
+python3 -c "import cv2; print(cv2__version__)"
+//cv2를 반드시 붙여야함
 
 ---
 
